@@ -20,4 +20,5 @@ Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on intresting project ideas.
 - 💬 Open Web enthusiast. Come explore the various corners of the internet with me!
 - 📫 How to reach me: pankajtanwar510@gmail.com
+- 📫 About me: https://pankajtanwarbanna.github.io/
 -->
