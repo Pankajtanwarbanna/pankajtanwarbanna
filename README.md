@@ -8,6 +8,7 @@
 - 💬 Open Web enthusiast. Come explore the various corners of the internet with me!
 - 📫 How to reach me: pankajtanwar510@gmail.com
 - 📫 About me: https://pankajtanwar.in/
+- 📫 My Blogs: https://blog.pankajtanwar.in/
 
 <!--
 **Pankajtanwarbanna/pankajtanwarbanna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
