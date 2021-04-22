@@ -1,14 +1,11 @@
 ### Hi there 👋
 
-- 🔭 I am a passionate, self-taught MEAN developer who likes to write clean, well-tested JS code. I consider myself a life long learner
-- :fire: Leveling up on Angular, React & NodeJs :)
+- 🔭 I am a passionate, self-taught full stack developer who likes to write clean, well-tested JS code. I consider myself a life long learner
 - :boom: My passion includes handling complex and intresting scale problems. 
-- :heart_eyes: I love every freakin' thing about the web.
-- 👯 I’m looking to collaborate on intresting project ideas.
 - 💬 Open Web enthusiast. Come explore the various corners of the internet with me!
-- 📫 How to reach me: pankajtanwar510@gmail.com
+- 📫 I write about System Design & Web Tech at : https://blog.pankajtanwar.in/
 - 📫 About me: https://pankajtanwar.in/
-- 📫 My Blogs: https://blog.pankajtanwar.in/
+- 📫 How to reach me: pankajtanwar510@gmail.com
 
 #### My Top Blogs 💬
 
