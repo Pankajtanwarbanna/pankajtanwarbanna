@@ -7,7 +7,7 @@
 - 📫 About me: https://pankajtanwar.in/
 - 📫 How to reach me: pankajtanwar510@gmail.com
 
-#### My Top Blogs 💬
+#### Some of my blogs.. 💬
 
 - [How twitter stores 500M tweets a day?](https://blog.pankajtanwar.in/how-twitter-stores-500m-tweets-a-day-1)
 - [How database indexing actually works internally?](https://blog.pankajtanwar.in/how-database-indexing-actually-works-internally)
