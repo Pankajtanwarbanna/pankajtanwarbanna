@@ -4,41 +4,175 @@
 		"published_on"	: "2021-01-10",
 		"title" : "Explain Microservices like I am 10.",
 		"description" : "Microservice architecture explained in the simplest way possible to understand by a 10 year kid.",
-		"tags" : ["microservices"]
+		"tags" : ["microservices"],
+		"popularity" : 1
 	},
 	{
 		"slug"	: "possible-ways-to-iterate-a-string-in-javascript",
 		"published_on"	: "2021-01-10",
 		"title" : "Possible ways to iterate a string in JavaScript.",
 		"description" : "JavaScript is a commonly used language. Let's see some really intresting methods to iterate a string in JavaScript.",
-		"tags" : ["javaScript"]
+		"tags" : ["javaScript"],
+		"popularity" : 1
 	},
 	{
 		"slug"	: "convert-number-to-indian-format-number-using-javascript",
 		"published_on"	: "2021-01-12",
 		"title" : "Convert number to Indian format number using Javascript.",
 		"description" : "Different countries have different conventions to display monetary values. Likewise, India follow Indian numbering convention. Let's checkout quickly, how to convert number to indian format number.",
-		"tags" : ["javaScript"]
+		"tags" : ["javaScript"],
+		"popularity" : 1
 	},
 	{
 		"slug"	: "advantages-and-disadvantages-of-declaring-javascript-functions-inside-objects",
 		"published_on"	: "2021-02-12",
 		"title" : "Advantages & disadvantages of declaring JavaScript functions inside objects.",
 		"description" : "Few days back, one of my friends was asked this question in his JS developer interview. There are several methods & coding techniques to write JavaScript functions.",
-		"tags" : ["javaScript"]
+		"tags" : ["javaScript"],
+		"popularity" : 1
 	},
 	{
 		"slug"	: "my-journey-from-python-scripts-to-20-freelance-full-stack-projects",
 		"published_on"	: "2021-02-13",
 		"title" : "My journey - from python scripts to 20+ freelance full stack projects.",
 		"description" : "Here is my journey from writing python scripts to a freelance full stack developer.",
-		"tags" : ["personal"]
+		"tags" : ["personal"],
+		"popularity" : 1
 	},
 	{
 		"slug"	: "generating-unique-ids-in-a-distributed-environment-at-high-scale",
 		"published_on"	: "2021-02-18",
 		"title" : "Generating unique IDs in a distributed environment at high scale.",
 		"description" : "At a high scale, generating unique IDs is a really intresting system design problem to solve. Let's deep dive into possible methods with their pros and cons.",
-		"tags" : ["system design"]
+		"tags" : ["system design"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "how-twitter-stores-500m-tweets-a-day",
+		"published_on"	: "2021-02-26",
+		"title" : "How Twitter stores 500M tweets a day?",
+		"description" : "Twitter handles close to 500M tweets per day. Let's deep dive into the architecture behind storage engines at twitter.",
+		"tags" : ["system design"],
+		"popularity" : 6
+	},
+	{
+		"slug"	: "scalability-challenge-how-to-remove-duplicates-in-a-large-data-set-100m",
+		"published_on"	: "2021-03-08",
+		"title" : "Scalability Challenge : How to remove duplicates in a large data set (~100M) ?",
+		"description" : "Dealing with large datasets is often daunting. With limited computing resources, particularly memory, it can be challenging to perform even basic tasks like counting distinct elements, membership check, & filtering duplicate elements.",
+		"tags" : ["system design"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "system-design-is-client-side-load-balancing-a-good-idea",
+		"published_on"	: "2021-03-15",
+		"title" : "System Design : Is client side load balancing a good idea?",
+		"description" : "Client side load balancing is a barely touched area while designing systems. Is client side load balancing, a good idea?",
+		"tags" : ["system design"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "proxy-vs-reverse-proxy-using-a-real-life-example",
+		"published_on"	: "2021-03-24",
+		"title" : "Proxy vs Reverse Proxy - using a real life example!",
+		"description" : "I am sure, you must have heard of Proxy and reverse proxy server. This is a very important topic, when we talk about backend engineering & computer networking. Some times it's very confusing to find the exact difference between both of them.",
+		"tags" : ["system design"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "how-database-indexing-actually-works-internally",
+		"published_on"	: "2021-03-31",
+		"title" : "How database indexing actually works internally?",
+		"description" : "An illustrated guide, to help you understand how exactly database indexing works internally!",
+		"tags" : ["database", "internals"],
+		"popularity" : 7
+	},
+	{
+		"slug"	: "system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service",
+		"published_on"	: "2021-04-10",
+		"title" : "System Design - How to design Google Drive / Dropbox (a cloud file storage service) ?",
+		"description" : "Let's design a highly scalable file upload & sharing service.",
+		"tags" : ["system design"],
+		"popularity" : 5
+	},
+	{
+		"slug"	: "how-instagram-computes-real-time-trending-hashtags",
+		"published_on"	: "2021-04-17",
+		"title" : "How Instagram computes real-time trending hashtags ?",
+		"description" : "Instagram has built a brilliant system in-house, to parse ~85M new photos and 700M hashtags everyday from over 500M users to compute realtime trending content. In this article, we will deep dive into how Instagram approached identifying, ranking and presenting the best trending hashtags realtime in the Instagram app.",
+		"tags" : ["system design"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "how-does-github-store-millions-of-repo-and-billions-of-files",
+		"published_on"	: "2021-04-20",
+		"title" : "How does Github store millions of repo and billions of files?",
+		"description" : "Let's find out the architecture behind Github - world's largest code hosting platforms for collaboration and version control, storing millions of repo and billions of files.",
+		"tags" : ["system design"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "interesting-analogy-to-understand-synchronous-callback-and-async-await-promises-approach-like-i-am-10-y-kid",
+		"published_on"	: "2021-04-23",
+		"title" : "Interesting analogy to understand synchronous, callback, and async-await (promises) approach like I am 10 Y Kid 🧒",
+		"description" : "Let's quickly understand the difference between synchronous, callback, and async-await (promises) approach like a 10 Year old Kid.",
+		"tags" : ["javascript"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "how-to-implement-whatsapp-like-end-to-end-encryption",
+		"published_on"	: "2021-04-29",
+		"title" : "How to implement WhatsApp like End-to-end encryption?",
+		"description" : "One of the WhatsApp key feature is end to end encryption of messages. In this article, we will quickly understand a simple implementation of WhatsApp like end to end message encryption.",
+		"tags" : ["encryption"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "the-basics-you-need-to-know-about-kafka-graphic-explanation-ahead",
+		"published_on"	: "2021-05-15",
+		"title" : "The basics you need to know about Kafka [Graphic Explanation Ahead 🖥️]",
+		"description" : "Welcome to my Apache Kafka series. In this series, we will be, one by one covering, (with the help of interactive & friendly graphics) from the basic terminology to deep diving into the brilliant architecture behind the wonderful piece of software, Kafka.",
+		"tags" : ["apache kafka"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "do-you-know-01-02-03-in-javascript-here-is-why",
+		"published_on"	: "2021-05-21",
+		"title" : "Do you know 0.1 + 0.2 ≠ 0.3 in JavaScript? Here is why!",
+		"description" : "It’s been a while since I have been working with JavaScript. Yesterday, I experienced a very strange behaviour - console.log(0.2 + 0.1) // 0.30000000000000004",
+		"tags" : ["javascript"],
+		"popularity" : 4
+	},
+	{
+		"slug"	: "have-you-ever-thought-how-nodemon-works-internally-lets-build-our-own-nodemon-in-under-10-minutes",
+		"published_on"	: "2021-05-30",
+		"title" : "Have you ever thought, how ‘nodemon’ works internally? Let’s build our own ‘nodemon’ in under 10 minutes!",
+		"description" : "If you have ever worked with Node.Js, you must have used a package called nodemon for development.But, have you ever thought about how it works internally? How would you proceed if you are asked to build a nodemon clone?",
+		"tags" : ["nodemon", "javascript"],
+		"popularity" : 3
+	},
+	{
+		"slug"	: "what-is-latency-lets-deep-dive-and-understand-possible-ways-to-optimise-it",
+		"published_on"	: "2021-06-17",
+		"title" : "What is latency? Let’s deep dive & understand possible ways to optimise it.",
+		"description" : "Latency is yet another, a very important topic when we talk about backend engineering or networking. In this article, we will be discussing latency, it's importance and ways to optimise it in order to improve application performance.",
+		"tags" : ["performance"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "introducing-bestresourcesco-share-and-explore-personal-resources-at-one-place",
+		"published_on"	: "2021-06-30",
+		"title" : "Introducing Bestresources.co : Share & explore personal resources at one place!",
+		"description" : "The Web is crowded. So, I asked engineers from Google, Facebook, Uber etc to share their personal resources and built Bestresources.co",
+		"tags" : ["personal", "side hustles"],
+		"popularity" : 1
+	},
+	{
+		"slug"	: "what-is-the-sorting-algorithm-behind-order-by-query-in-mysql",
+		"published_on"	: "2021-07-20",
+		"title" : "What is the sorting algorithm behind ORDER BY query in MySQL?",
+		"description" : "Since the last couple of weeks, I have been working on MySQL more closely. MySQL is a brilliant piece of software. I remember reading about all the sorting algorithms in college so I was curious to know which algorithm MySQL uses and how ORDER BY query works internally in such an efficient manner.",
+		"tags" : ["database", "internals", "mysql"],
+		"popularity" : 10
 	}
 ]
