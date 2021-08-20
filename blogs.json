@@ -1,7 +1,44 @@
-[{
-	"slug"	: "explain-microservices-like-i-am-10",
-	"published_on"	: "2021-01-10",
-	"title" : "Explain Microservices like I am 10.",
-	"description" : "Microservice architecture explained in the simplest way possible to understand by a 10 year kid.",
-	"tags" : ["microservices"]
-}]
+[
+	{
+		"slug"	: "explain-microservices-like-i-am-10",
+		"published_on"	: "2021-01-10",
+		"title" : "Explain Microservices like I am 10.",
+		"description" : "Microservice architecture explained in the simplest way possible to understand by a 10 year kid.",
+		"tags" : ["microservices"]
+	},
+	{
+		"slug"	: "possible-ways-to-iterate-a-string-in-javascript",
+		"published_on"	: "2021-01-10",
+		"title" : "Possible ways to iterate a string in JavaScript.",
+		"description" : "JavaScript is a commonly used language. Let's see some really intresting methods to iterate a string in JavaScript.",
+		"tags" : ["javaScript"]
+	},
+	{
+		"slug"	: "convert-number-to-indian-format-number-using-javascript",
+		"published_on"	: "2021-01-12",
+		"title" : "Convert number to Indian format number using Javascript.",
+		"description" : "Different countries have different conventions to display monetary values. Likewise, India follow Indian numbering convention. Let's checkout quickly, how to convert number to indian format number.",
+		"tags" : ["javaScript"]
+	},
+	{
+		"slug"	: "advantages-and-disadvantages-of-declaring-javascript-functions-inside-objects",
+		"published_on"	: "2021-02-12",
+		"title" : "Advantages & disadvantages of declaring JavaScript functions inside objects.",
+		"description" : "Few days back, one of my friends was asked this question in his JS developer interview. There are several methods & coding techniques to write JavaScript functions.",
+		"tags" : ["javaScript"]
+	},
+	{
+		"slug"	: "my-journey-from-python-scripts-to-20-freelance-full-stack-projects",
+		"published_on"	: "2021-02-13",
+		"title" : "My journey - from python scripts to 20+ freelance full stack projects.",
+		"description" : "Here is my journey from writing python scripts to a freelance full stack developer.",
+		"tags" : ["personal"]
+	},
+	{
+		"slug"	: "generating-unique-ids-in-a-distributed-environment-at-high-scale",
+		"published_on"	: "2021-02-18",
+		"title" : "Generating unique IDs in a distributed environment at high scale.",
+		"description" : "At a high scale, generating unique IDs is a really intresting system design problem to solve. Let's deep dive into possible methods with their pros and cons.",
+		"tags" : ["system design"]
+	}
+]
