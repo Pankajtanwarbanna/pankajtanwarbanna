@@ -3,7 +3,7 @@ title: Interesting analogy to understand synchronous, callback, and async-await 
 date: '2021-04-23'
 tags: ['javascript']
 draft: false
-summary: 'Let's quickly understand the difference between synchronous, callback, and async-await (promises) approach like a 10 Year old Kid.'
+summary: Let's quickly understand the difference between synchronous, callback, and async-await (promises) approach like a 10 Year old Kid.
 author: the2ndfloorguy
 ---
 

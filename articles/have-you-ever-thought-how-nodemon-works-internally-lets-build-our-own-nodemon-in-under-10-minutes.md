@@ -3,7 +3,7 @@ title: Have you ever thought, how ‘nodemon’ works internally? Let’s build 
 date: '2021-05-30'
 tags: ['nodemon', 'javascript']
 draft: false
-summary: 'If you have ever worked with Node.Js, you must have used a package called nodemon for development.But, have you ever thought about how it works internally? How would you proceed if you are asked to build a nodemon clone?'
+summary: If you have ever worked with Node.Js, you must have used a package called nodemon for development.But, have you ever thought about how it works internally? How would you proceed if you are asked to build a nodemon clone?
 author: the2ndfloorguy
 ---
 

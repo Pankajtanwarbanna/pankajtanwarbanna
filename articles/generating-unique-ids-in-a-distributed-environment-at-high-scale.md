@@ -3,7 +3,7 @@ title: Generating unique IDs in a distributed environment at high scale.
 date: '2021-02-18'
 tags: ['system design']
 draft: false
-summary: 'At a high scale, generating unique IDs is a really intresting system design problem to solve. Let's deep dive into possible methods with their pros and cons.'
+summary: At a high scale, generating unique IDs is a really intresting system design problem to solve. Let's deep dive into possible methods with their pros and cons.
 author: the2ndfloorguy
 ---
 

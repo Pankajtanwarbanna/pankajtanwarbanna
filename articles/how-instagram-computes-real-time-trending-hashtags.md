@@ -3,7 +3,7 @@ title: How Instagram computes real-time trending hashtags ?
 date: '2021-04-17'
 tags: ['system design']
 draft: false
-summary: 'Instagram has built a brilliant system in-house, to parse ~85M new photos and 700M hashtags everyday from over 500M users to compute realtime trending content. In this article, we will deep dive into how Instagram approached identifying, ranking and presenting the best trending hashtags realtime in the Instagram app.'
+summary: Instagram has built a brilliant system in-house, to parse ~85M new photos and 700M hashtags everyday from over 500M users to compute realtime trending content. In this article, we will deep dive into how Instagram approached identifying, ranking and presenting the best trending hashtags realtime in the Instagram app.
 author: the2ndfloorguy
 ---
 

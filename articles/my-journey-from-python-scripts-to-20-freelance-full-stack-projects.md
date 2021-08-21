@@ -3,7 +3,7 @@ title: My journey - from python scripts to 20+ freelance full stack projects.
 date: '2021-02-13'
 tags: ['personal']
 draft: false
-summary: 'Here is my journey from writing python scripts to a freelance full stack developer.'
+summary: Here is my journey from writing python scripts to a freelance full stack developer.
 author: the2ndfloorguy
 ---
 

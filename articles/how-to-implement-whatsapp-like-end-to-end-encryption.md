@@ -3,7 +3,7 @@ title: How to implement WhatsApp like End-to-end encryption?
 date: '2021-04-29'
 tags: ['encryption']
 draft: false
-summary: 'One of the WhatsApp key feature is end to end encryption of messages. In this article, we will quickly understand a simple implementation of WhatsApp like end to end message encryption.'
+summary: One of the WhatsApp key feature is end to end encryption of messages. In this article, we will quickly understand a simple implementation of WhatsApp like end to end message encryption.
 author: the2ndfloorguy
 ---
 

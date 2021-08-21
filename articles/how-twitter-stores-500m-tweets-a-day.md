@@ -3,7 +3,7 @@ title: How Twitter stores 500M tweets a day?
 date: '2021-02-26'
 tags: ['system design']
 draft: false
-summary: 'Twitter handles close to 500M tweets per day. Let's deep dive into the architecture behind storage engines at twitter.'
+summary: Twitter handles close to 500M tweets per day. Let's deep dive into the architecture behind storage engines at twitter.
 author: the2ndfloorguy
 ---
 

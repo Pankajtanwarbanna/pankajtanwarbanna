@@ -3,7 +3,7 @@ title: What is the sorting algorithm behind ORDER BY query in MySQL?
 date: '2021-06-20'
 tags: ['database', 'internals', 'mysql']
 draft: false
-summary: 'Since the last couple of weeks, I have been working on MySQL more closely. MySQL is a brilliant piece of software. I remember reading about all the sorting algorithms in college so I was curious to know which algorithm MySQL uses and how ORDER BY query works internally in such an efficient manner.'
+summary: Since the last couple of weeks, I have been working on MySQL more closely. MySQL is a brilliant piece of software. I remember reading about all the sorting algorithms in college so I was curious to know which algorithm MySQL uses and how ORDER BY query works internally in such an efficient manner.
 author: the2ndfloorguy
 ---
 

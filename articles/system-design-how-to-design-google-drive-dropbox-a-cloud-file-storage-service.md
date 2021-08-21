@@ -3,7 +3,7 @@ title: System Design - How to design Google Drive / Dropbox (a cloud file storag
 date: '2021-04-10'
 tags: ['system design']
 draft: false
-summary: 'Let's design a highly scalable file upload & sharing service.'
+summary: Let's design a highly scalable file upload & sharing service.
 author: the2ndfloorguy
 ---
 

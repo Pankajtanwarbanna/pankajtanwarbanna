@@ -3,7 +3,7 @@ title: Introducing Bestresources.co : Share & explore personal resources at one 
 date: '2021-06-30'
 tags: ['personal', 'side hustles']
 draft: false
-summary: 'The Web is crowded. So, I asked engineers from Google, Facebook, Uber etc to share their personal resources and built Bestresources.co'
+summary: The Web is crowded. So, I asked engineers from Google, Facebook, Uber etc to share their personal resources and built Bestresources.co
 author: the2ndfloorguy
 ---
 

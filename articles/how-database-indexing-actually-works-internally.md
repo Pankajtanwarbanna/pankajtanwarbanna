@@ -3,7 +3,7 @@ title: How database indexing actually works internally?
 date: '2021-03-31'
 tags: ['database', 'internals']
 draft: false
-summary: 'An illustrated guide, to help you understand how exactly database indexing works internally!'
+summary: An illustrated guide, to help you understand how exactly database indexing works internally!
 author: the2ndfloorguy
 ---
 

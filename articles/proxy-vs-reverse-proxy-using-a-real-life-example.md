@@ -3,7 +3,7 @@ title: Proxy vs Reverse Proxy - using a real life example!
 date: '2021-03-24'
 tags: ['system design']
 draft: false
-summary: 'I am sure, you must have heard of Proxy and reverse proxy server. This is a very important topic, when we talk about backend engineering & computer networking. Some times it's very confusing to find the exact difference between both of them.'
+summary: I am sure, you must have heard of Proxy and reverse proxy server. This is a very important topic, when we talk about backend engineering & computer networking. Some times it's very confusing to find the exact difference between both of them.
 author: the2ndfloorguy
 ---
 

@@ -3,7 +3,7 @@ title: Possible ways to iterate a string in JavaScript.
 date: '2021-01-10'
 tags: ['javaScript']
 draft: false
-summary: 'JavaScript is a commonly used language. Let's see some really intresting methods to iterate a string in JavaScript.'
+summary: JavaScript is a commonly used language. Let's see some really intresting methods to iterate a string in JavaScript.
 author: the2ndfloorguy
 ---
 

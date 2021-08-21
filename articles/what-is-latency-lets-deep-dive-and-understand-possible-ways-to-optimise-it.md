@@ -3,7 +3,7 @@ title: What is latency? Let’s deep dive & understand possible ways to optimise
 date: '2021-07-16'
 tags: ['performance']
 draft: false
-summary: 'Latency is yet another, a very important topic when we talk about backend engineering or networking. In this article, we will be discussing latency, it's importance and ways to optimise it in order to improve application performance.'
+summary: Latency is yet another, a very important topic when we talk about backend engineering or networking. In this article, we will be discussing latency, it's importance and ways to optimise it in order to improve application performance.
 author: the2ndfloorguy
 ---
 

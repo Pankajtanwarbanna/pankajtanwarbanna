@@ -3,7 +3,7 @@ title: Scalability Challenge : How to remove duplicates in a large data set (~10
 date: '2021-03-08'
 tags: ['system design']
 draft: false
-summary: 'Dealing with large datasets is often daunting. With limited computing resources, particularly memory, it can be challenging to perform even basic tasks like counting distinct elements, membership check, & filtering duplicate elements.'
+summary: Dealing with large datasets is often daunting. With limited computing resources, particularly memory, it can be challenging to perform even basic tasks like counting distinct elements, membership check, & filtering duplicate elements.
 author: the2ndfloorguy
 ---
 

@@ -3,7 +3,7 @@ title: Do you know 0.1 + 0.2 ≠ 0.3 in JavaScript? Here is why!
 date: '2021-05-21'
 tags: ['javaccript']
 draft: false
-summary: 'It’s been a while since I have been working with JavaScript. Yesterday, I experienced a very strange behaviour - console.log(0.2 + 0.1) // 0.30000000000000004'
+summary: It’s been a while since I have been working with JavaScript. Yesterday, I experienced a very strange behaviour - console.log(0.2 + 0.1) // 0.30000000000000004
 author: the2ndfloorguy
 ---
 

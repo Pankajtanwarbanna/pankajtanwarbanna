@@ -3,7 +3,7 @@ title: How does Github store millions of repo and billions of files?
 date: '2021-04-20'
 tags: ['system design']
 draft: false
-summary: 'Let's find out the architecture behind Github - world's largest code hosting platforms for collaboration and version control, storing millions of repo and billions of files.'
+summary: Let's find out the architecture behind Github - world's largest code hosting platforms for collaboration and version control, storing millions of repo and billions of files.
 author: the2ndfloorguy
 ---
 

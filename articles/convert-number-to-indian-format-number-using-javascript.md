@@ -3,7 +3,7 @@ title: Convert number to Indian format number using Javascript.
 date: '2021-01-12'
 tags: ['javascript']
 draft: false
-summary: 'Different countries have different conventions to display monetary values. Likewise, India follow Indian numbering convention. Let's checkout quickly, how to convert number to indian format number.'
+summary: Different countries have different conventions to display monetary values. Likewise, India follow Indian numbering convention. Let's checkout quickly, how to convert number to indian format number.
 author: the2ndfloorguy
 ---
 

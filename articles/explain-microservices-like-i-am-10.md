@@ -3,7 +3,7 @@ title: Explain Microservices like I am 10.
 date: '2021-01-10'
 tags: ['microservices']
 draft: false
-summary: 'Microservice architecture explained in the simplest way possible to understand by a 10 year kid'
+summary: Microservice architecture explained in the simplest way possible to understand by a 10 year kid
 author: the2ndfloorguy
 ---
 

@@ -3,7 +3,7 @@ title: The basics you need to know about Kafka [Graphic Explanation Ahead ðŸ–¥ï¸
 date: '2021-05-15'
 tags: ['apache kafka']
 draft: false
-summary: 'Welcome to my Apache Kafka series. In this series, we will be, one by one covering, (with the help of interactive & friendly graphics) from the basic terminology to deep diving into the brilliant architecture behind the wonderful piece of software, Kafka.'
+summary: Welcome to my Apache Kafka series. In this series, we will be, one by one covering, (with the help of interactive & friendly graphics) from the basic terminology to deep diving into the brilliant architecture behind the wonderful piece of software, Kafka.
 author: the2ndfloorguy
 ---
 

@@ -3,7 +3,7 @@ title: System Design : Is client side load balancing a good idea?
 date: '2021-03-15'
 tags: ['system design']
 draft: false
-summary: 'Client side load balancing is a barely touched area while designing systems. Is client side load balancing, a good idea?'
+summary: Client side load balancing is a barely touched area while designing systems. Is client side load balancing, a good idea?
 author: the2ndfloorguy
 ---
 
