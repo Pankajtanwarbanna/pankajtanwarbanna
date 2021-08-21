@@ -9,7 +9,7 @@ author: the2ndfloorguy
 
 Different countries have different conventions to display monetary values. Likewise, India follow Indian numbering convention.
 
-Example  - 
+**Example** 
 
 > 
 12345678 // normal number

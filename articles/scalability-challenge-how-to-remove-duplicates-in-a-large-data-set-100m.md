@@ -1,5 +1,5 @@
 ---
-title: Scalability Challenge : How to remove duplicates in a large data set (~100M) ?
+title: Scalability Challenge - How to remove duplicates in a large data set (~100M) ?
 date: '2021-03-08'
 tags: ['system design']
 draft: false
@@ -9,7 +9,7 @@ author: the2ndfloorguy
 
 > Dealing with large datasets is often daunting. With limited computing resources, particularly memory, it can be challenging to perform even basic tasks like counting distinct elements, membership check, filtering duplicate elements, finding minimum, maximum, top-n elements, or set operations like union, intersection, similarity and so on.
 
-**Real World Problem** :
+## Real World Problem
 
 Almost every mobile app has push notification feature. We need to design a way which guards sending multiple push notifications to the same user for the same campaign.
 
@@ -37,13 +37,13 @@ Now, to avoid sending multiple notification to same device, we need to filter ou
 
 Memory required to filter 100 MN tokens = 100M x 256 = **~25 GB**
 
-**The Solution**
+## The Solution
 
-Bloom Filter
+### `Bloom Filter`
 
 > Bloom Filters are data structures used to efficiently answer queries when we do not have enough "search key" space to handle all possible queries.
 
-**How Bloom Filter Works?**
+### How Bloom Filter Works?
 
 1. Allocate a bit array of size *m* 
 2. Choose *k*  independent hash functions  *h(x)* whose range is [ 0 .. m-1 ] 
@@ -56,7 +56,7 @@ If all the corresponding bits are 'on' means this is duplicate value.
 
 **NOTE** : Bits might be turned ‘on’ by hash collisions leading to false positives
 
-**What is the error rate and Memory requirement in bloom filter ?**
+### What is the error rate and Memory requirement in bloom filter ?
 
 With m bits, k hash functions, n input strings, we need to the false positive probability (hash collisions). 
 
@@ -69,48 +69,48 @@ $$
 Now, Probability of NOT setting a bit -
  
 $$
-\(1 - \frac{1}{m})
+(1 - \frac{1}{m})
 $$
 
 As we pass it to k hash functions & we have n input strings so the probability of a bit is not being set after passing it to n input strings and k hash functions is -
 
 $$
-\{p} = \(1 - \frac{1}{m})^{kn}
+{p} = (1 - \frac{1}{m})^{kn}
 $$
 
 Now, the probability of getting error/ hash collision (by mistake setting a bit) for k hash functions is  
 
 $$
-  \{p} = \{(1 - (1 - \frac{1}{m})^{kn})^k}  \approx  \(1 - e^{(-\frac{kn}{m})})^k
+{p} = {(1 - (1 - \frac{1}{m})^{kn})^k}  \approx  (1 - e^{(-\frac{kn}{m})})^k
 $$
 
 for minimising error rate -
 
 $$
-  \frac{dp}{dk} &#8594; \{0}  
+\frac{dp}{dk} → {0}
 $$
 
 Now, 
 
 $$
-  \{k} = \frac{m}{n} \times {ln \hspace{0.2cm} (2)}  
+{k} = \frac{m}{n} \times {ln \hspace{0.2cm} (2)}
 $$
 
 - Size of bit array-
 
 $$
-  \{m} = - \frac{n \times (ln \hspace{0.2cm}  p)}{(ln \hspace{0.2cm}  2)^2}  
+{m} = - \frac{n \times (ln \hspace{0.2cm}  p)}{(ln \hspace{0.2cm}  2)^2}
 $$
 
 - Memory required for 100 Million push tokens with 0.001 error probability -
 
 $$
-\{m} = - \frac{100000000 \times (ln \hspace{0.2cm} 0.001)}{(ln \hspace{0.2cm} 2)^2} \approx \{171 MB}  
+{m} = - \frac{100000000 \times (ln \hspace{0.2cm} 0.001)}{(ln \hspace{0.2cm} 2)^2} \approx {171 MB}
 $$
 
 This is massive improvement from 25 GB to 171 MB (reducing memory requirements by ~98%)
 
-**Applications of Bloom Filters** :
+### Applications of Bloom Filters
 
 1. Facebook uses bloom filters for typeahead search, to fetch friends and friends of friends to a user typed query.
 
@@ -126,5 +126,3 @@ Cryptographic hashes like MD5 or SHA-1 are not good choices for performance reas
 Thanks for reading.
 
 > Source - Suresh Kondamudi's Discussion (CleverTap ) 
-
-About me : http://pankajtanwar.in

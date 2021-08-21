@@ -9,7 +9,7 @@ author: the2ndfloorguy
 
 Recently, I was working on an application which had a sharded database, required generating unique IDs at scale that could be used as a primary key. This is commonly asked and an interesting system design problem. In this article, I will discuss the possible solutions with their pros and cons.
 
-**My Requirements -**
+## My Requirements -
 
 I need to design a system which generates :
 - Unique Ids
@@ -17,16 +17,16 @@ I need to design a system which generates :
 - should ideally be 64 bit (for smaller indexes and better storage in systems like redis)
 - Highly available and scalable
 
-**Possible solutions -**
+### Possible solutions
 
-1.. **Auto Incrementing Ids**
+1. **Auto Incrementing Ids**
 
-Pros :
+**Pros**
 
 - The simplest approach ever
 - Sorted in nature
 
-Cons :
+**Cons**
 
 - Fails in case of sharded databases
 - Auto-incrementing ids are leaky
@@ -41,30 +41,30 @@ https://mysocialmedia.com/profile/1234
 Here 1234 is the auto incrementing id which is assigned to the profile. If I wait for some time and create a new profile, I can compare these profile ids and know how many profiles were created during that time. It might not be a very sensitive information but It's a bad practice, a system exposing information that It didn't intend to disclose.
 
 
-2.. **Current Timestamp**
+2. **Current Timestamp**
 
-Pros : 
+**Pros**
 
 - super simple approach
 - Always unique, works for small applications, single process, non-sharded dbs
 
-Cons : 
+**Cons**
 
 - Does not work for sharded dbs, fails very badly at scale and in case of multiple processes
 - Again leaky, not a good practice
 
 
-3.. **UUIDs** 
+3. **UUIDs** 
 
 UUIDs (Universally Unique Identifier) are 128-bit hexadecimal numbers that are globally unique.
 
-Pros :
+**Pros**
 
 - Totally independent (uses current timestamp, process id, MAC address) and works very well for sharded databases at high scale
 - Always unique, Negligible chances of collisions (same UUID generating twice)
 - If we use timestamp as the first component of the ID, the IDs remain time-sortable.
 
-Cons : 
+**Cons**
 
 - UUIDs require more space (128 bit) just to make reasonable uniqueness guarantees.
 - Due to its big size, it doesn't index well. When our dataset increases, index size increases and query performance takes a hit.
@@ -79,7 +79,7 @@ Cons :
 
 >  [Nano ID](https://github.com/ai/nanoid/)  can also be an option which are ~40% faster and lighter than UUID packages. They use hardware random numbers to prevent collisions instead of using timestamp, mac address etc. Its simpler + secure but again, size is big and reducing sizes comes with a cost of less uniqueness.
 
-4.. **MongoDB Object IDs** 
+4. **MongoDB Object IDs** 
 
 MongoDB object Ids are 96 bit hexadecimal numbers, made up of -
 
@@ -94,16 +94,16 @@ MongoDB object Ids are 96 bit hexadecimal numbers, made up of -
 Again, the size is relatively longer than what we normally have in a single MySQL auto-increment field (a 64-bit bigint value).
 
 
-5.. **Database ticketing server**
+5. **Database ticketing server**
 
 This approach uses a centralized database server to generate unique incrementing ids. In simple words, a table which stores the latest generated ID and every time a node asks for an ID, it increments the values sent back as a new ID.
 
-Pros : 
+**Pros**
 
 - works very well for sharded database and at scale
 - short length, index pretty well, does not hit query performance in case of large dataset
 
-Cons : 
+**Cons**
 
 - Single point of failure as all nodes rely on this table for the next id.
 - Ticketing servers can become a write bottleneck at scale as it might not be suitable when writes per seconds are very high as it will overload the ticketing server and degrade the performance.
@@ -111,7 +111,7 @@ Cons :
 - If using a single db for the same, there is a single point of failure and if we use multiple dbs, we can not guarantee that ids are sortable over time.
 
 
-6.. **Twitter Snowflake**
+6. **Twitter Snowflake**
 
 This is a dedicated network service for generating 64-bit unique IDs at high scale. It is developed by twitter to generate unique ids (for tweets, direct messages, lists etc).
 
@@ -130,9 +130,3 @@ More info about  [Twitter Snowflake](https://github.com/twitter-archive/snowflak
 > Instagram also built their own stack for generating unique ids, which looks similar to Twitter snowflake approach but avoids introducing additional complexity (Snowflake servers) into their architecture.
 
 **Conclusion** - System designing is more of a discussion. These are my personal views. Feel free to correct me.
-
-Github - https://github.com/Pankajtanwarbanna
-
-Website - https://pankajtanwar.in
-
-Thanks for reading.

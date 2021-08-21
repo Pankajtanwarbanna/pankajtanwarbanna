@@ -79,7 +79,7 @@ Several factors on the backend server, such as slow database queries, low memory
 
 There are several standard metrics to measure latency. 
 
-- **Time to First Byte (TTFB) **
+- **Time to First Byte (TTFB)**
 
 This is one of the widely accepted matrices to measure latency. As the name itself explains, TTFB is the time (in milliseconds) for a browser to receive the first byte of response from the server.
 
@@ -110,8 +110,6 @@ Browsers can cache some of the resources which reduces the calls to the server a
 - **Server Side Optimisations**
 
 Server side optimisations such as less disk I/O, caching, efficient algorithms, smart database layer & asynchronous programming can help in optimising the latency.
-
-<adding caching to the stack tweet embedd>
 
 ## 6. Conclusion
  

@@ -3,7 +3,7 @@ title: What is the sorting algorithm behind ORDER BY query in MySQL?
 date: '2021-06-20'
 tags: ['database', 'internals', 'mysql']
 draft: false
-summary: Since the last couple of weeks, I have been working on MySQL more closely. MySQL is a brilliant piece of software. I remember reading about all the sorting algorithms in college so I was curious to know which algorithm MySQL uses and how ORDER BY query works internally in such an efficient manner.
+summary: Since the last couple of weeks, I have been working on MySQL more closely. MySQL is a brilliant piece of software. I remember reading about all the sorting algorithms in college so I was curious to know which algorithm MySQL uses and how ORDER BY query works internally in such an efficient manner
 author: the2ndfloorguy
 ---
 
@@ -18,6 +18,7 @@ MySQL is canny. Its sorting algorithm depends on a couple of factors -
 - MySQL version
 
 MySQL has two methods to produce sorted/ordered streams of data. 
+
 
 # 1. Smart use of Indexes
 
@@ -35,13 +36,13 @@ Really interesting thing to see here is-
 
 Assume, we have an index on userId and mobileNumber in the user table and we run below query -
 
-
 ```
 SELECT * FROM USER
 ORDER BY userId , mobileNumber;
 ``` 
 
-Here, you might feel Indexes on userId and mobileNumber enables optimizer to use index BUT this query has “ **SELECT *** ”, which is selecting more columns than just userId and mobileNumber. 
+
+Here, you might feel Indexes on userId and mobileNumber enables optimizer to use index BUT this query has `SELECT`, which is selecting more columns than just `userId` and `mobileNumber`. 
 
 In this case, scanning through an entire index, to find columns which are not in the index, is more expensive than scanning the table and sorting the results. Here, the optimizer probably does not use the index.
 
@@ -61,13 +62,11 @@ If Indexes can not be used to satisfy an **ORDER BY** clause, **MySQL** utilises
 
 If the expected result fits in one chunk, the data never hits disk, but remains in RAM.
 
-To your surprise, suppose, if we have 1 Billion rows in our user table and if we run below two queries -
-
+To your surprise, suppose, if we have 1 Billion rows in our user table and if we run below two queries-
 
 ```
 SELECT * FROM users ORDER BY userId ;
 ``` 
-
 
 ```
 SELECT * FROM users ORDER BY userId LIMIT 5;
@@ -75,7 +74,7 @@ SELECT * FROM users ORDER BY userId LIMIT 5;
 
 MySQL optimizer is smart enough to understand, it's not worth using merge sort. So, It uses heap sort if we just want a set of results, not the entire data. 
 
-> Ordering by multiple columns does not require scanning the database twice! In MySQL (<v4.1), it used to read the data twice, once to match rows in WHERE clause and one, in the end to prepare the result from row pointers. 
+> Ordering by multiple columns does not require scanning the database twice! In MySQL (< v4.1), it used to read the data twice, once to match rows in WHERE clause and one, in the end to prepare the result from row pointers. 
 
 ## TL;DR
 
@@ -93,6 +92,3 @@ MySQL optimizer is smart enough to understand, it's not worth using merge sort. 
 [MySQL Official Website](https://dev.mysql.com/doc/refman/8.0/en/order-by-optimization.html)
 
 [MySQL filesort : Github](https://github.com/mysql/mysql-server/blob/8.0/sql/filesort.cc)
-
-<hr>
-[@the2ndfloorguy](https://twitter.com/the2ndfloorguy) on twitter!

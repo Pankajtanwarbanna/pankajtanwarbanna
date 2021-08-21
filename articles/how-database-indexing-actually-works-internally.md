@@ -9,8 +9,7 @@ author: the2ndfloorguy
 
 Let's start with a simple example showing why you would need indexing in a database.
 
-Suppose we have a table called ***costing*** with three columns company_id, unit, unit_cost which is completely unordered.
-
+Suppose we have a table called `costing` with three columns company_id, unit, unit_cost which is completely unordered.
 
 ![Screenshot_2021-03-30 How Does Indexing Work.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1617104098709/YNHkkZWQM.png)
 
@@ -30,7 +29,7 @@ WHERE
 
 The database would have to go through all the records one by one, in the order they appear to search for the matching datasets. It will become more and more time consuming once the table size increases. 
 
-**Visual Representation of the Query execution** 
+## Visual Representation of the Query execution
 
 
 ![unindexed-table.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1617104166946/8zJr3-l9F.png)
@@ -47,11 +46,11 @@ Now, due to sorted order, the database knows which records to examine and when t
 
 The main point of having a index is to cut down the number of records/rows in a table which needs to be examined by the database, to speed up the searching queries.
 
-### **So, How indexing actually works?**
+**So, How indexing actually works?**
 
 Well, first off, the database table does not reorder itself when we put index on a column to optimize the query performance. 
 
-> An index is a data structure, (most commonly its B-tree {Its balanced tree, not binary tree}) that stores the value for a specific column in a table. 
+> An index is a data structure, (most commonly its B-tree `Its balanced tree, not binary tree`) that stores the value for a specific column in a table. 
 
 The major advantage of B-tree is that the data in it is sortable. Along with it, B-Tree data structure is time efficient and operations such as searching, insertion, deletion can be done in logarithmic time.
 
@@ -62,36 +61,36 @@ So the index would look like this -
 
 Here for each column, it would be mapped with a database internal identifier (pointer) which points to the exact location of the row. And, now if we run the same query.
 
-**Visual Representation of the Query execution**
+## Visual Representation of the Query execution
 
 
 ![indexed-table.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1617104408068/FcTbI9GvN3.png)
 
 So, indexing just cuts down the time complexity from o(n) to o(log n).
 
-**What are other types of indexes?**
+## What are other types of indexes?
 
-01 **Hash Index** -
+1. **Hash Index** -
 
 Hash table are another data structure which are used in indexing. The reason behind hash indexes are used is because hash table are extremly efficient when it comes to searching values (0(1) time complexity).
 
 So now, if run the query which we discussed earlier, instead of o(log n) search, hash index will get the pointer value from hash table directly in o(1) and query would be much faster. 
 
-**So, why not use hash index everywhere if it is so fast?**
+## So, why not use hash index everywhere if it is so fast?
 
 Well, there are some disadvantages of hash index. These are un sorted in manner and there are many types of queries which hash indexes can not even help with. For example, suppose you want to find out all of the companies which has company_id less than 40. How could you do that with a hash table index? Well, it’s not possible because a hash table is only good for looking up key value pairs – which means queries that check for equality (like “WHERE company_id = 18”).
 
 This is why hash indexes are usually not the default type of data structure used by database indexes – because they aren’t as flexible as B- trees when used as the index data structure.
 
-02 **R-Tree** -
+2. **R-Tree** -
 
 These indexes uses R-tree data structure and these are used to help with spatical problems such as "find all bus stand within 5KM of me".
 
-03 **Bit map index** -
+3. **Bit map index** -
 
 These indexes works well on column that contain Boolean values (true or false).
 
-**What is the cost of indexing?**
+## What is the cost of indexing?
 
 - Indexing makes "reads faster but writes slower". Every write, update, insert operation to the table, will have to be done to the index also.
 
@@ -99,7 +98,7 @@ These indexes works well on column that contain Boolean values (true or false).
 
 - Another thing is space, the larger our table, the larger our index.
 
-**The most common pitfalls of Indexing**
+## The most common pitfalls of Indexing
 
 Most of the developers think, indexing is super cool. Put indexing on any column and query performance is gonna sky rocket but this is not the case. We need to consider a few things while putting index on columns (Here we are going to talk about MySQL).
 
@@ -138,7 +137,4 @@ Along with this, order of indexes also matters a lot in query performance.
 
 Thanks for reading. 
 
-> Image Source - [Chartio](https://chartio.com/).
-
-About me : https://pankajtanwar.in
-
+Image Source - [Chartio](https://chartio.com/).

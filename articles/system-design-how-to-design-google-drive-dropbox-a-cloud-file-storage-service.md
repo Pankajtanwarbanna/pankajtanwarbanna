@@ -7,18 +7,17 @@ summary: Let's design a highly scalable file upload & sharing service.
 author: the2ndfloorguy
 ---
 
-
 System design is one of the most important aspect of software engineering. System design problems are usually open-ended discussions.
 
 Let’s design a cloud file storage service like Google drive or drop box. These services provides a platform that allow users to upload their files online and access them from any device. In this article, we will focus on architecture design & performance analysis of the system.
 
 So let’s dive right in!
 
-### **Problem Statement**
+## Problem Statement
 
 We need to design a service like Google Drive or Dropbox which allows users to store their data securely, synchronised & effectively on remote servers. User should be able to download and upload files from all their devices. System should be highly available, reliable and scalable.
 
-### **Feature Expectations** 
+## Feature Expectations
 
 The top level requirements of the system are as follows -
 
@@ -34,16 +33,19 @@ The top level requirements of the system are as follows -
 - System should support large files uploading 
 - ACID operations :
 
-Atomic		    - File upload should be all or none <br>
-Consistency	- Both versions on device and server must be same <br>
-Isolation	        - Ensure multiple transactions at same time, with data consistency <br>
+Atomic		    - File upload should be all or none
+
+Consistency	- Both versions on device and server must be same 
+
+Isolation	        - Ensure multiple transactions at same time, with data consistency
+
 Durability	    - Must be highly available & durable 
 
 **Not in Scope**
 
 Sharing file access with other users, offline editing.
 
-### **Scale** 
+## Scale 
 
 - **Total Users** 		: ~100 M
 - **Daily Active Users**	: ~50 M
@@ -58,13 +60,13 @@ Sharing file access with other users, offline editing.
     ((50 M x 200KB x 5 ) x 20) / 100  = 10 Tera Byte
 - **Active Connections**	: 1 M active connections per minute 
 
-### **High Level Design**
+## High Level Design
 
 On a high level, we need to support two scenarios, one to upload/edit/delete files and other to view/search files. We would need some object storage server (cloud storage) to store files, one block server with whom client would interact, one database server to store metadata information (file name, file size, path etc) about the files and one synchronisation server. 
 
 ![high-level-design.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1617952845935/_gcU4laIG.png)
 
-### **System APIs** 
+## System APIs
 
 Following are the APIs we can expose from our service -
 
@@ -78,7 +80,7 @@ Following are the APIs we can expose from our service -
 
 We can have an another API to generate a write token (uploadToken) before hand when a user request to upload a new file. Here we will have an opportunity to authenticate & validate the user. If we need to block a user from uploading new files, a check can be put here instead of allowing user to send whole file in request and then discard it. It can avoid unnecessary resources consumption.
 
-### **Component Design & Deep dive**
+## Component Design & Deep dive
 
 ![component-design.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1617952954142/fiX9kr9T_.png)
 
@@ -118,9 +120,6 @@ This strategy will helps us in many ways -
 
 4. **Faster lookup & version control**  - As we are only transmitting the modified chunks in case of updates, it helps us in proving a history of versions of the file. We can directly lookup at the modified chunks to see the modifications.
 
-
-
-
 - **How to calculate chunk size**
 
 Calculation of optimal chunk size can be done based on below parameters -
@@ -146,15 +145,13 @@ An effective solution would be to use HTTP long polling. With long polling, clie
 **NOTE** - Unlike desktop or web clients, mobile clients usually sync on demand to save user’s bandwidth and space.
 
 
-### **Metadata database**
+## Metadata database
 
 We store the metadata & indexes of all chunks in our database as we have to track it. Important thing here is that we are not storing the actual file/chunks itself here, we are storing only the metadata information to retrieve the file later. It is also responsible for maintaining the history (versioning) of files.
 
 Database can be a relational database such as MySQL or a non-relational database such as cassandra, dynamoDB or MongoDB. Let's discuss which database to consider for our use case -
 
 - **Relational vs Non-relational Database**
-
-
 
 1. As, multiple users might be on the same file simultaneously & we need to ensure data consistency. Since NoSQL data storage do not support ACID properties in favour of performance and scalability. We would need to implement ACID properties pro-grammatically in synchronisation service. It would require extra DB configurations. (For example, Cassandra replication factor gives the consistency level). Here, relational database (MySQL) has a plus point as they support ACID properties.
 
@@ -167,7 +164,7 @@ To overcome this problem, we can have a wrapper around all databases and cache i
 **NOTE** : Storing file URL in database is a really bad idea. Using stored metadata information to construct the URL is a lot more robust and scalable.
 
 
-### **Synchronisation Service** 
+## Synchronisation Service
 
 For every new update, synchronisation service is responsible to efficiently process updates and apply changes to other subscribed devices to keep their local db and remote db in sync. 
 
@@ -175,7 +172,7 @@ Synchronisation service should be designed to transmit as less data as possible 
 
 For more efficiency, we can consider using a communication middleware between client and sync service. It will provide a global message queue to support a very high number of pull or push from client. 
 
-### **Message Queuing Service**
+## Message Queuing Service
 
 To enable asynchronous message based communication between client and server to serve huge number of requests, we can make use of a scalable message queuing service. It should support efficient storing of any number of messages in a highly available, reliable and scalable queue.
 
@@ -186,13 +183,13 @@ Along with high scalabiliy and high performance, it provides load balancing and 
 ![message-queue.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1617953447327/3aRsoDsiw.png)
 
 
-### **Cloud/Block Storage**
+## Cloud/Block Storage
 
 Cloud/Block storage stores all the chunks, uploaded by users to the service. As we have metadata database, separate from storage, we can use any cloud storage approach eg - Amazon S3, Azure etc.
 
 > When Dropbox started, they used S3 as block storage. However as they grew, they developed an in-house multi-exabyte storage system known as Magic Pocket. In magic Pocket, files are split up into blocks, replicated for durability, and distributed across data centres in multiple geographic regions.
 
-### **Database Partitioning**
+## Database Partitioning
 
 From database scalability point of view, database partitioning comes into picture to ensure scalability. Partitioning is the database process where very large tables are divided into multiple smaller parts for faster queries. 
 
@@ -209,16 +206,14 @@ From database scalability point of view, database partitioning comes into pictur
 
     Based on hash of fileId, randomly generated by our hash function, we can have partitions. Hash will be mapped to a number and it would be our partition to store the object. This approach can still lead to unbalanced partitions but can be solved by using consistent hashing.
 
-### **Caching**
+## Caching
 
 Caching is a very common technique for performance. This is very helpful to lower the latency. For our use case, **Memcached** would be a good choice which can store the whole chunk, with it's respective hash. A cache for Metadata Database can also be used.	
 
 Cache servers are determined based on users' usage pattern & **LRU** (Least Recently Used) can be the optimal policy for our cache.
 
-### **Load Balancer**
+## Load Balancer
 
 We can adopt round robin or some other fancy algorithm for load balancing layer to distribute the incomming traffic uniformly. 
 
 > Source : INTERNET
-
-About me : https://pankajtanwar.in

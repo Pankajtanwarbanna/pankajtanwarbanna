@@ -9,21 +9,21 @@ author: the2ndfloorguy
 
 Back in March 2017, I was about to complete one year of my Bachelor degree in Computer Science at NIT Jaipur. I had no prior experience of coding, no clue what I was going to do. Next year, I had python programming language in curriculum. I was amazed to know the power of python so I started exploring more about it. 
 
-**Phase 1 - Python Scripts**
+## Phase 1 - Python Scripts
 
 I started learning python. After practising some basic programming problems, I decided to do something interesting. I looked around and tried to find some small problems which I could solve using python. One day, I had to submit some scholarship form. For that, I needed to scan my documents via a third party app and convert them to PDF to upload it to the portal so I thought of writing a python script for the same. Being curious I searched how to do it and landed on using an amazing library available called "Pillow".
 
 And my first script was ready! It would take path of document images and create merged PDFs as per my requirements. After that, I kept on writing scripts such as Voice based Python Virtual Assistant, Duplicate file finder, YouTube songs down loader, Command line calculator, Attendance Manager for our VS club at MNIT Jaipur, Snake game and many more.
 
-**Phase 2 - Winter Internship**
+## Phase 2 - Winter Internship
 
 In Nov 2017, I joined a startup as a web developer intern. That was one of my best decision. I had never worked on web dev so I was pretty excited about it. I got a chance to work closely with the co-founder and learnt a lot. This was the turning point, It got me into the world of web development and encouraged me to explore more. I started exploring Node, Angular, Mongo and came across the amazing YouTube channel of David Acosta. 
 
-**Phase 3 - My First Live Project**
+## Phase 3 - My First Live Project
 
 In Jan 2018, our club was planning our annual socio-cultural sports fest and my friend suggested the idea of developing a website for registrations and event details. We had very less time for the fest. But we were finally able to launch it. It was a great feeling for both of us to see our project live. During college, we won two hackathons too.
 
-**Phase 4 - Freelancing Projects**
+## Phase 4 - Freelancing Projects
 
 After a few months, I got contacted by a startup founder to help him with a project. It was an online platform for students to sell their projects, research papers etc. I built the whole project from scratch in 2 days in the excitement of my first salary as a freelancer. He was really impressed with my work and referred me to his clients. I was getting enough projects but it was hectic. So many sleep less nights, multiple projects at once, strict deadlines but I decided to continue anyhow. I remember, spending 1 whole day in our college computer centre, continuously coding for 18 hours straight.
 
@@ -48,9 +48,3 @@ Fast forward, recently I completed a few freelance projects such as interactive 
 It´s a jump into the uncertain. It's an exciting roller coaster ride. When I look back at those sleepless nights, I really feel if I would not have pushed my self, I would never be able to come out of my comfort zone.  
 
 Today, I am fortunate enough to have around 20+ full stack projects in my portfolio. Still, there is a long way to go, so many targets to achieve and a lot more to learn. 
-
-Most of my projects can be found on GitHub account - https://github.com/Pankajtanwarbanna
-
-Reach out to me for any kind of help - https://pankajtanwar.in
-
-I document my learning's here - https://blog.pankajtanwar.in

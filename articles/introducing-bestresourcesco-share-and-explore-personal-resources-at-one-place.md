@@ -1,5 +1,5 @@
 ---
-title: Introducing Bestresources.co : Share & explore personal resources at one place!
+title: Introducing Bestresources.co - Share & explore personal resources at one place!
 date: '2021-06-30'
 tags: ['personal', 'side hustles']
 draft: false
@@ -9,7 +9,7 @@ author: the2ndfloorguy
 
 Namaste 🙏
 
-I am Pankaj, a self taught software developer passionate about exploring tech. Today, I feel extremely proud to launch https://bestresources.co - my submission for [HarperDB hackathon](https://townhall.hashnode.com/announcing-harperdb-hackathon-on-hashnode) on @[Hashnode](@hashnode)
+I am Pankaj, a self taught software developer passionate about exploring tech. Today, I feel extremely proud to launch https://bestresources.co - my submission for [HarperDB hackathon](https://townhall.hashnode.com/announcing-harperdb-hackathon-on-hashnode) on [Hashnode](@hashnode)
 
 ## Motivation 
 
@@ -31,7 +31,6 @@ I felt the need of a dedicated platform, where people can share their resources,
 
 Introducing Bestresources.co - a free platform for the community to share & get direct access to the personal resources of the community.
 
-
 ![Screenshot from 2021-06-30 09-20-00.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1625025068685/32JUdUgrg.png)
 
 https://bestresources.co is now live with curated resources by senior developers from Google, Amazon, Uber etc and so many self taught developers &  freelancers.
@@ -50,7 +49,7 @@ And within 1.5 week, I was able to launch bestresoures.co 🎉
 
 I am very very sensitive to code quality. 😛 While maintaining the code quality, (as much as possible), https://bestresources.co is live with below features -
 
-**1. Listing of interesting resources **
+**1. Listing of interesting resources**
 
 As you head over to bestresources.co, it brings you  interesting resources. Explore the hidden gem of the web.
 
@@ -62,7 +61,7 @@ Add & share your resources with the community at a single click. Easy and beauti
 
 Who does not like appreciation? Express your gratitude to the author author for taking out time and sharing his resources. 
 
-**4. Bookmark **
+**4. Bookmark**
 
 Save the resource for later use at just one tap. We always remember what you save!
 
@@ -154,15 +153,13 @@ Well, there were a lot of challenges on the way to bringing this project to life
 
 The complete source code is available on github. Feel free to [DM me on twitter](https://twitter.com/the2ndfloorguy) if you need more details. Would love to help.
 
-> [Bestresources.co Github Link](https://github.com/Pankajtanwarbanna/bestresources.co)
-
-If you feel like contributing to the platform, feel free to raise a PR. Let's give something back to the community. 
+If you feel like contributing to the platform, feel free to [raise a PR](https://github.com/Pankajtanwarbanna/bestresources.co). Let's give something back to the community. 
 
 ## Try Bestresources.co
 
 > [Bestresources.co](https://bestresources.co)
 
-There are many others, who have guided and helped this project come to life - friends, family, @[Hashnode](@hashnode), internet strangers!
+There are many others, who have guided and helped this project come to life - friends, family, [Hashnode](@hashnode), internet strangers!
 
 I am most grateful for everyone’s kindness ❤️
 

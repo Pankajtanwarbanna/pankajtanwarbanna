@@ -72,7 +72,7 @@ Let’s create a new javascript file `index.js` and paste the following code.
 console.log(‘Hey! Welcome to nodekeeper’);
 ```
 
-Here the first line which starts with **#!** is called ‘shebang’. Its main purpose is to inform the system what type of script is included in the rest of the file. Here, we have included a path to node binary which tells the system that our file is a file which can we executed by node. 
+Here the first line which starts with **#!** is called `shebang`. Its main purpose is to inform the system what type of script is included in the rest of the file. Here, we have included a path to node binary which tells the system that our file is a file which can we executed by node. 
 
 To run a JavaScript file using `nodekeeper index.js` instead of `node index.js` we need to create a duplicate node binary. 
 
@@ -104,7 +104,7 @@ Now, to install this tool to run globally in our system we run -
 npm link
 ```
 
-Now, anywhere in our system we can run any JavaScript file like this ‘nodekeeper <filename>’. Really cool right?
+Now, anywhere in our system we can run any JavaScript file like this `nodekeeper <filename>`. Really cool right?
 
 Let’s understand now, what child processes are. As we all know, NodeJs is single threaded but still we can take advantage of the child processes with the help of the `child_process` module. To scale our node app, It helps us to leverage parallel processing on multi-core CPUs. 
 

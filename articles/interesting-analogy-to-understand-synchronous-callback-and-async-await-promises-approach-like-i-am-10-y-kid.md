@@ -17,14 +17,8 @@ Let's quickly understand the difference between synchronous, callback, and async
 
 So,
 
-**Situation 1** : Synchronous ( Blocking approach ) - Not efficient
+**Situation 1** : `Synchronous` ( Blocking approach ) - Not efficient
 
-**Situation 2** : Giving contact no means leaving a callback, non-blocking but not that efficient as no control over callback (SPAM MSGS), callback hell (nested callbacks)
+**Situation 2** : Giving contact no means `leaving a callback`, non-blocking but not that efficient as no control over callback (SPAM MSGS), callback hell (nested callbacks)
 
-**Situation 3** : async-await (wrapped in promise) - asynchronous, non-blocking, easy and clean, No callback only two args - resolve and reject, efficient BUT messy error handling
-
-<hr>
-
-Thanks for reading!
-
-Give me cheeky follow on [twitter](https://twitter.com/the2ndfloorguy)
+**Situation 3** : `async-await` (wrapped in promise) - asynchronous, non-blocking, easy and clean, No callback only two args - resolve and reject, efficient BUT messy error handling

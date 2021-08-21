@@ -11,7 +11,7 @@ I am sure, you might have used Instagram and explored it's trending section. Ins
 
 In this article, we will deep dive into how Instagram approached identifying, ranking and presenting the best trending hashtags realtime in the Instagram app.
 
-### What is a trending hashtag actually?
+## What is a trending hashtag actually?
 
 In simple words, a hashtag is trending whenever there is an unusual number of people who are sharing posts using that hashtag, as a result of something happening in that moment.
 
@@ -23,7 +23,7 @@ So, they identified three main elements to a good trending hashtag -
 
 3. **Timeliness** : It should surface while respective event is taking place. 
 
-### How to identify a trending hashtag?
+## How to identify a trending hashtag?
 
 If the observed activity (no of media shared using that hashtag) for any hashtag is higher than it's expected activity, then we can say, this is something that is trending and we can determine their trending ranks based on their differences from the expected values.
 
@@ -33,7 +33,7 @@ Let's say every hour Instagram observes that there are only a few posts shared u
 
 In reverse, more then 100K posts are shared with **#love** everyday as it is a very common and popular hashtag. Even if, 10K extra posts (total 110K) are observed any day, it won't be enough to be counted as trending.
 
-### How Instagram implemented it?
+## How Instagram implemented it?
 
 Initially, for each hashtag, Instagram stored the counters of posts shared using hashtag, in each 5 min window for the last 7 days. 
 
@@ -57,7 +57,7 @@ t -> Timeliness
 
 And based on t, they were able to show real-time trending hashtags.
 
-### Accurate prediction Problem
+## Accurate prediction Problem
  
 It was not as simple as it looks. There were so many challenges Instagram faced while it's implementation -
 
@@ -75,7 +75,7 @@ But still, predicted baseline probability was still zero for few hashtags and co
 
 > It came with the cost. As the longer the time frame is, the more data they have, but the slower it will be to identify a trend.
 
-### Ranking Trending hashtags 
+## Ranking Trending hashtags 
 
 Next challenge was to rank all hashtags based on their trendiness. 
 
@@ -99,13 +99,13 @@ tmax is the time when KL score was maximum
 
 After setting *half-life* to be two hours (SM(h) is halved every two hour), hashtag will still showup in trending.
 
-### Grouping similar trending hashtags 
+## Grouping similar trending hashtags 
 
 Once we have real time trending hashtags, it's very important to group similar trending hashtags and only show the best representative of the group because people use a range of different hashtags to describe the same event and showing multiple hashtags related to same event can lead to annoying user experience.
 
 To calculate similarity matrix for each pair of trending hashtags, hashtag grouping system rely on Co-occurrences, Edit distance (using Levenshtein distance algorithm which efficiently calculates the minimum number of single-character edits between two words) & Topic distribution (using Term frequency-inverse document frequency).
 
-### Backend System
+## Backend System
 
 Trending backend system is designed as stream processing application with four nodes.
 
@@ -124,8 +124,4 @@ It collects all the hashtags along with their trending scores and ranks them bas
 
 > Important thing to note here is, the whole architecture is stream lined as each one of them is taking care of a different partition therefore as many parallel instances can be run without compromising the whole trending system in case of system failure.
 
-Source - Instagram Engineering Blogs.
-
-<hr>
-
-Thanks for reading. I would love to hear any corrections or additions!
+Source - [Instagram Engineering Blogs](https://instagram-engineering.com/).

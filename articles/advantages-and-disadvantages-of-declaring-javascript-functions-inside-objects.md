@@ -1,15 +1,15 @@
 ---
-title: Possible ways to iterate a string in JavaScript.
+title: Advantages & disadvantages of declaring JavaScript functions inside objects.
 date: '2021-01-10'
 tags: ['javaScript']
 draft: false
-summary: JavaScript is a commonly used language. Let's see some really intresting methods to iterate a string in JavaScript.
+summary: Few days back, one of my friends was asked this question in his JS developer interview. There are several methods & coding techniques to write JavaScript functions.
 author: the2ndfloorguy
 ---
 
 Few days back, one of my friends was asked this question in his JS developer interview. There are several methods & coding techniques to write JavaScript functions. The most common approach is -
 
-- **Method 1 **
+- **Method 1**
 
 ```
 function foo() {
@@ -55,6 +55,5 @@ From the top level view, we do not find any specific difference in terms of code
 ```
 my.today.pankaj.getName()
 ``` 
-
 
 - Second method requires some extra processing by JS engine but this will not affect the speed much as it would be like optimizing our code execution time ~0.1ms , not an achievement).

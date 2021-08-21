@@ -9,7 +9,7 @@ author: the2ndfloorguy
 
 Github is one of the world’s largest code hosting platforms for collaboration and version control. 
 
-### Scale at Github
+## Scale at Github
 
 **Repository** - 200M Repo (Including 30M Public Repo)
 
@@ -17,7 +17,7 @@ Github is one of the world’s largest code hosting platforms for collaboration 
 
 Before directly jumping into data storage, let’s quickly go through Github Architecture once.
 
-### Github Architecture
+## Github Architecture
 
 Whenever you type a Github repo URL in the browser, a lot of things happen behind the scene to show you a beautiful repo page.
 
@@ -43,20 +43,20 @@ Backend has connection with MySQL and cache
 
 **IMPORTANT** - Github uses Rackspace instead of Amazon EC2 as Amazon Elastic Block Store was not nearly as fast as bare metal when they ran benchmarks for handling high disk IO operations.
 
-### Old Github File Storage
+## Old Github File Storage
 
 Initially Github used GFS (Global File System) but as they grew, scalability took a hit. After connecting more servers to the file system, performance degraded rapidly. 
 
 For MySQL database replication they were using DRBD (Database Replicated Block Device) which is a distributed, flexible and versatile replicated storage solution for Linux.
 
 
-### New Github Storage 
+## New Github Storage 
 
 In the new architecture, Github removed the shared file system completely and started using federated storage (a collection of autonomous storage resources which are being monitored by a common management system that provides rules, how data is stored, managed and migrated throughout the storage network). 
 
 In the new system, they could add as many additional machines (Linux machines running ext3/ext4) they wanted, without hitting the performance. 
 
-### Spokes
+## Spokes
 
 Github has developed a very nice system called “Spokes” (previously known as D-Git) to store multiple distributed copies of a github repo across data centres. 
 
@@ -64,7 +64,7 @@ Spokes stores multiple replicas of a repo and keeps all replicas in sync. It doe
 
 GitHub makes use of the three-phase commit protocol in order to update replicas, and also a distributed lock to ensure the correct update order
 
-### How data is stored in file storage?
+## How data is stored in file storage?
 
 All data in a Git repo is stored in a Direct Acyclic Graph. Every commit has a link with it’s parent commit. It also has a link to a tree which keeps a snapshot of the working directory in the moment when the commit was created. This tree links to the sub-tree (folders & files) and sub-trees recursively links to other sub-trees.
 
@@ -82,9 +82,3 @@ For each push to a Git repo, it goes through a proxy which is responsible for re
 ![spokes-diagram.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1618923213894/_4cprxOP5.jpeg)
 
 Github Spokes’s design, with optimization of the performance of distributed reference updates, now allows Spokes to replicate Git repositories effectively. This improves robustness, speed, and flexibility.
-
-<hr>
-
-Thanks for reading. I would love to hear any corrections or additions!
-
-I write about System Design, Backend Engineering and Web Tech at : https://blog.pankajtanwar.in/

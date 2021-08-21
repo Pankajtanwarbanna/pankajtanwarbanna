@@ -24,11 +24,11 @@ First, we will go through the typical chatting application architectures impleme
 
 Raw text is sent via HTTP request to the server, it is saved in the DB and sent to User B via HTTP.
 
-**Pros - **
+**Pros**
 
 1. Super simple to implement
 
-**Cons -**
+**Cons**
 
 1. No end to end encryption
 
@@ -43,11 +43,11 @@ Raw text is sent via HTTP request to the server, it is saved in the DB and sent 
 
 Raw text is transferred over HTTPS to the server.
 
-**Pros - ** 
+**Pros** 
 
 1. Man in the middle attack is not possible as we are transferring data using HTTPS so TLS will encrypt the data over the network.
 
-**Cons -**
+**Cons**
 
 1. TLS termination happens at load balancer level and data will be decrypted at backend server and servers can read your messages as data is saved in plain text.
 
@@ -92,12 +92,6 @@ Here we use, second concept of public key cryptography.
 
 Hope, it gave you a fair idea of how we can implement end to end encryption.
 
-<hr> 
-
 ✍️ **Take Home Assignment** : How can we implement End to End Group Messaging encryption using public key cryptography? Let me know in the comments! 
 
 > References : [Public Key Cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography), [Public and Private Keys](https://www.preveil.com/blog/public-and-private-key/), [Arpit Bhayani](https://www.youtube.com/watch?v=m_7xSIhxZL8&ab_channel=ArpitBhayani)
-
-Thanks for reading. 
-
-If you liked the article, give me a cheeky follow at [twitter](https://twitter.com/the2ndfloorguy).
