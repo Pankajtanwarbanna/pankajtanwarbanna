@@ -174,5 +174,13 @@
 		"description" : "Since the last couple of weeks, I have been working on MySQL more closely. MySQL is a brilliant piece of software. I remember reading about all the sorting algorithms in college so I was curious to know which algorithm MySQL uses and how ORDER BY query works internally in such an efficient manner.",
 		"tags" : ["database", "internals", "mysql"],
 		"popularity" : 10
+	},
+	{
+		"slug"	: "3-percent-formula-to-invest-in-yourself",
+		"published_on"	: "2021-08-29",
+		"title" : "3% Formula to invest in yourself.",
+		"description" : "Since the last couple of weeks, I have been working on MySQL more closely. MySQL is a brilliant piece of software. I remember reading about all the sorting algorithms in college so I was curious to know which algorithm MySQL uses and how ORDER BY query works internally in such an efficient manner.",
+		"tags" : ["personal"],
+		"popularity" : 1
 	}
 ]
