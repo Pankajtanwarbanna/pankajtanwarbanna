@@ -18,7 +18,7 @@ Well, the 3% formula from the book `No Excuses` by [Brian Tracy](https://briantr
 This concept is really powerful as it keeps you disciplined and pushes you to a better version of yourself. I decided to tweak the concept a little bit and added a couple of things for myself. 
 
 - Invest 3% of monthly income in me
-	- Buy online courses related to my 
+	- Buy online courses related to my field
 	- Attend webinars or events
 	- listen to podcasts
 	- read a book every month 
@@ -32,7 +32,7 @@ This concept is really powerful as it keeps you disciplined and pushes you to a 
 	- Solving one programming problem every day
 
 
-- Invest 3% of the everyday time in yourself
+- Invest 3% of the everyday time in me
 	- Apart from my scheduled tasks, I make sure to allocate at least 3% time to just take a pause from everything and do stuff that I love.
 
 Over time, I have learned that setting a system is much more effective than setting a goal. I don't have any specific goals from my side-hustles or writing blogs. I just love being part of it & enjoy the process of building, writing, and sharing.
