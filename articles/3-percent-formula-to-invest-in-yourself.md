@@ -1,3 +1,12 @@
+---
+title: 3% Formula to invest in yourself.
+date: '2021-08-29'
+tags: ['personal']
+draft: false
+summary: If you want to grow, you need to invest in yourself
+author: the2ndfloorguy
+---
+
 > If you want to grow, you need to invest in yourself.
 
 Due to being part of N number of side-hustles & projects along with my current job, I usually don't get much time to track my growth. But last week, a medical emergency, gave me an opportunity to take a pause. And I found that my schedule was highly disorganized. I was spending a major chunk on low-priority or unproductive tasks. So, I decided to restructure it, in order to have a specific investment back in myself every day. 
