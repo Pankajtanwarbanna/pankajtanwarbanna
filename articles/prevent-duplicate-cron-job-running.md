@@ -3,7 +3,7 @@ title: Prevent duplicate cron job running.
 date: '2021-08-31'
 tags: ['notes']
 draft: false
-summary: Today, while working on an in-house project, I encountered a really interesting concurrency problem. I have scheduled a cron job to run every 30 minutes, but if the script takes more than 30 minutes to finish, another cron job started and these jobs started stacking up over each other. This essay discusses the approach to solve get rid of this interesting issue.
+summary: Today, while working on an in-house project, I encountered a really interesting concurrency problem. I have scheduled a cron job to run every 30 minutes, but if the script takes more than 30 minutes to finish, another cron job started and these jobs started stacking up over each other. This essay discusses my approach to get rid of this interesting issue.
 author: the2ndfloorguy
 ---
 
