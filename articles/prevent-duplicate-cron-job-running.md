@@ -3,26 +3,26 @@ title: Prevent duplicate cron job running.
 date: '2021-08-31'
 tags: ['notes']
 draft: false
-summary: Today, while working on an in-house project, I encountered a really interesting issue.
+summary: Today, while working on an in-house project, I encountered a really interesting concurrency problem. I have scheduled a cron job to run every 30 minutes, but if the script takes more than 30 minutes to finish, another cron job started and these jobs started stacking up over each other. This essay discusses the approach to solve get rid of this interesting issue.
 author: the2ndfloorguy
 ---
 
-Today, while working on an in-house project, I encountered a really interesting issue. I needed a python script, running every 30 minutes, pulling some information from a third party, processing the data, updating on my local database & take a rest till the next round. I wrote the script and set-up the cron.
+Today, while working on an in-house project, I encountered a really interesting problem. I needed a python script, running every 30 minutes, pulling some information from a third party, processing the data, updating on my local database & take a rest till the next round. I wrote the script and set-up the cron.
 
 Smooth right!
 
 But, my happiness didn't last long. Sometimes, my script took more than 30 minutes to execute. This presented me with a beautiful issue of cron jobs overlapping & data duplication. I didn't want the jobs to start stacking up over each other.
 
-Ahh. Cute [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) issue.
+Ahh. Cute [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) problem.
 
 To fix this, like any other developer, a couple of thoughts popped up in my mind. 
 
 - Modify my python script, use some internal package to list down all running processes & grep if the same cron is already running. If yes, maybe it's not a good time to run it.
-- Why not look for the existence of a particular file "mylock.txt" and exit if it exists or create it if it doesn't?
+- Why not look for the existence of a particular file `mylock.txt` and exit if it exists or create it if it doesn't?
 
 Both solutions seemed pretty lousy & unsafe. And touching a working code is my biggest nightmare.
 
-A bit of google search, headed me over to a beautiful tool, [Flock](https://linux.die.net/man/1/flock). 
+Our internal discussion, headed me over to a beautiful tool, [Flock](https://linux.die.net/man/1/flock). 
 
 # So, What's flock?
 
