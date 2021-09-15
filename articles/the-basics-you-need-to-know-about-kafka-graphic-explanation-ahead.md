@@ -57,14 +57,14 @@ As the name suggests, topics are basically addresses in kafka, to which a messag
 
 ### Interesting… So how data is stored?
 
-A topic behaves like a queue. Producer keeps on pushing data to it, and on the other side the consumer reads it.
+A topic behaves like a pipe. Producer keeps on pushing data to it, and on the other side the consumer reads it.
 
 Let’s visualise, for example a message is sent to some topic A -
 
 
 ![Kafka Message Sent](https://cdn.hashnode.com/res/hashnode/image/upload/v1621057241565/nZcp99VdA.png)
 
-So, Messages are stored in the queue, permanently. Messages stay in the queue always and can not be modified or deleted. 
+So, Messages are stored in the pipe, permanently. Messages stay in the pipe always and can not be modified or deleted. 
 
 
 ![Kafka Message Queued](https://cdn.hashnode.com/res/hashnode/image/upload/v1621057250766/PoTl54H0r.png)
@@ -91,7 +91,7 @@ So, these Kafka topics allow us to store data asynchronously irrespective of whe
 
 ### Partitions 
 
-Ok, I have a confession 😟. I lied. A Kafka topic is not just a single queue. It’s a combination of queues which helps kafka scale. Every queue is called partition. 
+Ok, I have a confession 😟. I lied. A Kafka topic is not just a single pipe. It’s a combination of pipes which helps kafka scale. Every pipe is called partition. 
 
 
 ![Kafka Partitions](https://cdn.hashnode.com/res/hashnode/image/upload/v1621057324608/JkGOEbzmA.png)

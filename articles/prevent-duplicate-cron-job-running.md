@@ -74,7 +74,7 @@ So, my crontab entry looked like this -
  */30 * * * * /usr/bin/flock -w 0 /home/myfolder/my-file.lock python my_script.py > /home/myfolder/mylog.log 2>&1
 ```
 
-Well, calm down. I know, I have added some random texts to my cron. Let's decode the meaning of `>/home/myfolder/mylog.log 2>&1` one by one.
+Well, calm down. I know, I have added some random texts to my cron. Let's decode the meaning of `> /home/myfolder/mylog.log 2>&1` one by one.
 
 - `>` is standard I/O redirection.
 - `/home/myfolder/mylog.log` is a black hole where any data is sent
@@ -83,7 +83,7 @@ Well, calm down. I know, I have added some random texts to my cron. Let's decode
 - `&` symbol for file descriptor 
 - `1` is file descriptor for standard output (STDOUT)
 
-`2>&1` means a redirection of channel 2 (STDERR) to channel 1 (STDOUT) so both outputs are now on the same channel 1. `>/home/myfolder/mylog.log` means, output from channel 1 will be sent to this black hole. 
+`2>&1` means a redirection of channel 2 (STDERR) to channel 1 (STDOUT) so both outputs are now on the same channel 1. `> /home/myfolder/mylog.log` means, output from channel 1 will be sent to this black hole. 
 
 To sum it up, output & errors are generated while the execution of your script will go to this file.
 
