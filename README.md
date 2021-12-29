@@ -10,6 +10,10 @@
 
 #### Some of my blogs.. 💬
 
+- [What is the sorting algorithm behind ORDER BY query in MySQL?
+?](https://www.pankajtanwar.in/blog/what-is-the-sorting-algorithm-behind-order-by-query-in-mysql)
+- [The basics you need to know about Kafka [Graphic Explanation Ahead 🖥️]
+](https://www.pankajtanwar.in/blog/the-basics-you-need-to-know-about-kafka-graphic-explanation-ahead)
 - [How twitter stores 500M tweets a day?](https://pankajtanwar.in/blog/how-twitter-stores-500m-tweets-a-day)
 - [How database indexing actually works internally?](https://pankajtanwar.in/blog/how-database-indexing-actually-works-internally)
 - [Do you know 0.1 + 0.2 ≠ 0.3 in JavaScript? Here is why!](https://pankajtanwar.in/blog/do-you-know-01-02-03-in-javascript-here-is-why)
