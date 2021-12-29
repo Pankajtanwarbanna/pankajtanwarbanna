@@ -17,7 +17,7 @@ I didn't exactly know the difference between these two words in English before. 
 
 A folder (like a file folder) is a space, used to hold several files BUT a directory (like a telephone directory) is like an index that points to the location of items inside it.
 
-![[https://user-images.githubusercontent.com/25531072/147690782-2e9b2a8a-743c-4a93-ba4d-012fb8a7219e.png]]
+![Folders vs Directories](https://user-images.githubusercontent.com/25531072/147690782-2e9b2a8a-743c-4a93-ba4d-012fb8a7219e.png)
 
 If we understand this with an analogy, a folder is like a hotel with rooms inside it but the directory is a hotel keeper, who knows all the rooms.
 
