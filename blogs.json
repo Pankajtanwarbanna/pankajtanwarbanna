@@ -190,5 +190,13 @@
 		"description" : "Today, while working on an in-house project, I encountered a really interesting concurrency problem. I have scheduled a cron job to run every 30 minutes, but if the script takes more than 30 minutes to finish, another cron job started and these jobs started stacking up over each other. This essay discusses my approach to get rid of this interesting issue.",
 		"tags" : ["notes"],
 		"popularity" : 1
+	},
+	{
+		"slug"	: "a-directory-is-not-a-folder",
+		"published_on"	: "2021-12-29",
+		"title" : "A directory is not a folder.....",
+		"description" : "I started using computers with Windows and later switched to Linux. I didn't even realize my transition from using the term folder to directory. Yesterday, my crooked mind tricked me to research why folders are called directories in Linux.",
+		"tags" : ["linux"],
+		"popularity" : 1
 	}
 ]
