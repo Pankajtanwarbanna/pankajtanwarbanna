@@ -15,7 +15,7 @@ I didn't exactly know the difference between these two words in English before. 
 
 ## Folder vs Directory.
 
-A folder (like a file folder) is a space, used to hold several files BUT a directory (like a telephone directory) is like an index that points to the location of items inside it.
+A folder (like a file folder) is a space, used to hold several files BUT [a directory](https://en.wikipedia.org/wiki/Directory) (like a telephone directory) is like an index that points to the location of items inside it.
 
 ![Folders vs Directories](https://user-images.githubusercontent.com/25531072/147690782-2e9b2a8a-743c-4a93-ba4d-012fb8a7219e.png)
 
@@ -25,7 +25,7 @@ It's the right time to admit the fact that I am super dumb. I used to think, a d
 
 > A directory is just a `special file` that has the locations of the files inside it.
 
-So, this makes sense why it's called directory. Somewhere, in my mind, it was connecting the dots to the famous phrase "Everything is a file on Linux".
+So, this makes sense why it's called directory. Somewhere, in my mind, it was connecting the dots to the famous phrase "[Everything is a file on Linux](https://en.wikipedia.org/wiki/Everything_is_a_file)".
 
 Anyway, TLDR is, it all depends on the perspective. `Directory` is a file system concept. And when you are in a graphical environment that has visualization, people prefer to use the term `folder` as it's a GUI object.
 
@@ -36,9 +36,9 @@ So, a Linux file system has two major components, a pool of data blocks where th
 
 More specifically, a directory is a file that has a list of objects (file name and its i-node number). 
 
-So, Inode is something new here. Don't worry!
+So, [Inode](https://en.wikipedia.org/wiki/Inode) is something new here. Don't worry!
 
-Inode stands for Index Node. It is a data structure, which stores metadata for every file on the system in the i-node table. The Inode contains a wealth of information like ownership, permissions, file type, size, timestamp, data block address, etc (so everything except the file name and the actual file data).
+[Inode](https://en.wikipedia.org/wiki/Inode) stands for Index Node. It is a data structure, which stores metadata for every file on the system in the i-node table. The Inode contains a wealth of information like ownership, permissions, file type, size, timestamp, data block address, etc (so everything except the file name and the actual file data).
 
 Every file has one 1 inode. Directories, char files, block devices, are all files and they each have 1 inode.
 
