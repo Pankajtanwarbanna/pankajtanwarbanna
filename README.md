@@ -9,23 +9,23 @@ When I’m not working on large-scale systems, I’m probably:
 
 ### My Side Projects That Got People Talking
 
-- **🗣️ [Scream to Unlock](https://chromewebstore.google.com/detail/scream-to-unlock-yell-to/pmmikajpbkehhpomkmelipgiafampkah?authuser=0&hl=en)**  
+**🗣️ [Scream to Unlock](https://chromewebstore.google.com/detail/scream-to-unlock-yell-to/pmmikajpbkehhpomkmelipgiafampkah?authuser=0&hl=en)**  
   A Chrome extension that blocks social media until you yell *“I’m a loser”*. The louder you scream, the more time you get to browse.  
   `#1 on Hacker News • 2.5M+ views • Viral on Reddit`
 
-- **✈️ [Boeing Flight Detector](https://chromewebstore.google.com/detail/boeing-flight-detector/plboemigcnjaodhkpifamgddolpadjfe?authuser=0&hl=en)**  
+**✈️ [Boeing Flight Detector](https://chromewebstore.google.com/detail/boeing-flight-detector/plboemigcnjaodhkpifamgddolpadjfe?authuser=0&hl=en)**  
   A flight booking tool that flags Boeing aircraft — because safety (and drama).  
   `Viral on LinkedIn • 250k+ views • Built in a weekend`
 
-- **📱 [Teach Your Parents Smartphone](https://www.teach-your-parents-smartphone.com/)**  
+**📱 [Teach Your Parents Smartphone](https://www.teach-your-parents-smartphone.com/)**  
   An app that teaches parents how to use WhatsApp, UPI and other apps via simulations. Born from a real-life family crisis.  
   `Viral on Reddit • Actually helped my parents`
 
-- **💀 [Cringe Guard](https://chromewebstore.google.com/detail/cringe-guard-filter-out-c/noaafhfibcojghlilpedjjmlflmpamia)**  
+**💀 [Cringe Guard](https://chromewebstore.google.com/detail/cringe-guard-filter-out-c/noaafhfibcojghlilpedjjmlflmpamia)**  
   AI tool that blurs cringe LinkedIn posts in real time. No more hustle-bro trauma.  
   `150k+ views • Weekend build • Open source`
 
-- **🖼️ [Digital Photo Frame](https://www.pankajtanwar.in/blog/i-turned-my-10-year-old-tablet-into-a-digital-photo-frame-displaying-google-photos-album)**  
+**🖼️ [Digital Photo Frame](https://www.pankajtanwar.in/blog/i-turned-my-10-year-old-tablet-into-a-digital-photo-frame-displaying-google-photos-album)**  
   Gave my dusty Android 4.4 tablet a new life with a custom photo display server.  
   `400k+ views • Reddit loved it • Still running`
 
