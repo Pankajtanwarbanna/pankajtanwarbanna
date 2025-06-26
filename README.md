@@ -1,41 +1,57 @@
-### Hi there 👋
+Hey there! 👋 
 
-- 🔭 I am a passionate, self-taught full stack developer who likes to write clean, well-tested JS code. I consider myself a life long learner
-- :boom: My passion includes handling complex and intresting scale problems. 
-- 💬 Open Web enthusiast. Come explore the various corners of the internet with me!
-- 📫 I write about System Design & Web Tech at : https://pankajtanwar.in/blogs
-- 📫 About me: https://pankajtanwar.in/about
-- 📫 My newsletter: https://pankajtanwar.in/newsletter
-- 📫 How to reach me: pankajtanwar510@gmail.com
+I'm Pankaj - a software engineer obsessed with building **weird**, **fun**, and occasionally **useful** things. I ship for laughs, learning, and the love of building.
 
-#### Some of my blogs.. 💬
+When I’m not working on large-scale systems, I’m probably:
+- Debugging distributed systems for fun
+- Writing about databases and architecture on [my blog](https://your-blog-link.com),
+- Or shipping another side project I thought of at 2 AM.
 
-- [What is the sorting algorithm behind ORDER BY query in MySQL?
-?](https://www.pankajtanwar.in/blog/what-is-the-sorting-algorithm-behind-order-by-query-in-mysql)
-- [The basics you need to know about Kafka [Graphic Explanation Ahead 🖥️]
-](https://www.pankajtanwar.in/blog/the-basics-you-need-to-know-about-kafka-graphic-explanation-ahead)
-- [How twitter stores 500M tweets a day?](https://pankajtanwar.in/blog/how-twitter-stores-500m-tweets-a-day)
-- [How database indexing actually works internally?](https://pankajtanwar.in/blog/how-database-indexing-actually-works-internally)
-- [Do you know 0.1 + 0.2 ≠ 0.3 in JavaScript? Here is why!](https://pankajtanwar.in/blog/do-you-know-01-02-03-in-javascript-here-is-why)
-- [How does Github store millions of repo and billions of files?](https://pankajtanwar.in/blog/how-does-github-store-millions-of-repo-and-billions-of-files)
-- [System design : How Instagram computes real-time trending hashtags ?](https://pankajtanwar.in/blog/how-instagram-computes-real-time-trending-hashtags)
-- [System Design - How to design Google Drive / Dropbox (a cloud file storage service)](https://pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service)
-- [Proxy vs Reverse Proxy - using a real life example!](https://pankajtanwar.in/blog/proxy-vs-reverse-proxy-using-a-real-life-example)
-- [System Design : Is client side load balancing a good idea?](https://pankajtanwar.in/blog/system-design-is-client-side-load-balancing-a-good-idea)
-- [Scalability Challenge : How to remove duplicates in a large data set (~100M) ?](https://pankajtanwar.in/blog/scalability-challenge-how-to-remove-duplicates-in-a-large-data-set-100m)
-- [Generating unique IDs in a distributed environment at high scale](https://pankajtanwar.in/blog/generating-unique-ids-in-a-distributed-environment-at-high-scale)
+## My Side Projects That Got People Talking
 
-<!--
-**Pankajtanwarbanna/pankajtanwarbanna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- **🗣️ [Scream to Unlock](https://chromewebstore.google.com/detail/scream-to-unlock-yell-to/pmmikajpbkehhpomkmelipgiafampkah?authuser=0&hl=en)**  
+  A Chrome extension that blocks social media until you yell *“I’m a loser”*. The louder you scream, the more time you get to browse.  
+  `#1 on Hacker News • 2.5M+ views • Viral on Reddit`
 
-Here are some ideas to get you started:
+- **✈️ [Boeing Flight Detector](https://chromewebstore.google.com/detail/boeing-flight-detector/plboemigcnjaodhkpifamgddolpadjfe?authuser=0&hl=en)**  
+  A flight booking tool that flags Boeing aircraft — because safety (and drama).  
+  `Viral on LinkedIn • 250k+ views • Built in a weekend`
 
-- 🔭 I am a passionate, self-taught MEAN developer who likes to write clean, well-tested code. I consider myself a life long learner
-- 🔭 Leveling up on Angular & NodeJs :)
-- 🔭 My passion inclues handling complex and intresting scale problems. 
-- 🌱 I love every freakin' thing about the web.
-- 👯 I’m looking to collaborate on intresting project ideas.
-- 💬 Open Web enthusiast. Come explore the various corners of the internet with me!
-- 📫 How to reach me: pankajtanwar510@gmail.com
-- 📫 About me: https://pankajtanwarbanna.github.io/
--->
+- **📱 [Teach Your Parents Smartphone](https://www.teach-your-parents-smartphone.com/)**  
+  An app that teaches parents how to use WhatsApp, UPI and other apps via simulations. Born from a real-life family crisis.  
+  `Viral on Reddit • Actually helped my parents`
+
+- **💀 [Cringe Guard](https://chromewebstore.google.com/detail/cringe-guard-filter-out-c/noaafhfibcojghlilpedjjmlflmpamia)**  
+  AI tool that blurs cringe LinkedIn posts in real time. No more hustle-bro trauma.  
+  `150k+ views • Weekend build • Open source`
+
+- **🖼️ [Digital Photo Frame](https://www.pankajtanwar.in/blog/i-turned-my-10-year-old-tablet-into-a-digital-photo-frame-displaying-google-photos-album)**  
+  Gave my dusty Android 4.4 tablet a new life with a custom photo display server.  
+  `400k+ views • Reddit loved it • Still running`
+
+Explore my other projects [here](https://pankajtanwar.in/side-hustles).
+
+> Hey! I'm raising a tiny coffee fund to keep my creative projects (and my brain) running strong.  If you’ve enjoyed anything I made, consider fueling the next one with a coffee or two. https://buymeacoffee.com/the2ndfloorguy
+
+## Also, I Write
+
+My [technical blog](https://pankajtanwar.in/blogs) covers:
+- Internals of systems I'm curious about
+- Backend and infra breakdowns
+- Ramblings from the world of engineering
+- 300K+ readers  
+- Featured by MySQL, Cassandra, JavaScript Weekly  
+- Frontpage on Hacker News & Reddit
+
+## Professionally
+
+- Lead backend at **1Weather @ InMobi**, powering weather data for **200M+ users**
+- Built fintech systems that handle **₹1000 Cr+ disbursals**
+- Love clean infra, elegant APIs, and systems that just _don’t break_
+- Blog read by **300K+ engineers** worldwide
+
+## And lastly...
+
+I have three cats: **Kafka**, **Docker**, and **Mango**.  
+
+They don’t code, but they do walk across my keyboard frequently.
