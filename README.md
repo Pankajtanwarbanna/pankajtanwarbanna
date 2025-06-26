@@ -39,7 +39,7 @@ My [technical blog](https://pankajtanwar.in/blogs) covers:
 - Internals of systems I'm curious about
 - Backend and infra breakdowns
 - Ramblings from the world of engineering
-- 300K+ readers  
+- Blog read by **300K+ engineers** worldwide
 - Featured by MySQL, Cassandra, JavaScript Weekly  
 - Frontpage on Hacker News & Reddit
 
@@ -48,7 +48,6 @@ My [technical blog](https://pankajtanwar.in/blogs) covers:
 - Lead backend at **1Weather @ InMobi**, powering weather data for **200M+ users**
 - Built fintech systems that handle **₹1000 Cr+ disbursals**
 - Love clean infra, elegant APIs, and systems that just _don’t break_
-- Blog read by **300K+ engineers** worldwide
 
 ### And lastly...
 
