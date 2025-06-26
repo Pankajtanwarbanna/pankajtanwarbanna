@@ -7,7 +7,7 @@ When I’m not working on large-scale systems, I’m probably:
 - Writing about databases and architecture on [my blog](https://your-blog-link.com),
 - Or shipping another side project I thought of at 2 AM.
 
-## My Side Projects That Got People Talking
+### My Side Projects That Got People Talking
 
 - **🗣️ [Scream to Unlock](https://chromewebstore.google.com/detail/scream-to-unlock-yell-to/pmmikajpbkehhpomkmelipgiafampkah?authuser=0&hl=en)**  
   A Chrome extension that blocks social media until you yell *“I’m a loser”*. The louder you scream, the more time you get to browse.  
@@ -33,7 +33,7 @@ Explore my other projects [here](https://pankajtanwar.in/side-hustles).
 
 > Hey! I'm raising a tiny coffee fund to keep my creative projects (and my brain) running strong.  If you’ve enjoyed anything I made, consider fueling the next one with a coffee or two. https://buymeacoffee.com/the2ndfloorguy
 
-## Also, I Write
+### Also, I Write
 
 My [technical blog](https://pankajtanwar.in/blogs) covers:
 - Internals of systems I'm curious about
@@ -43,14 +43,14 @@ My [technical blog](https://pankajtanwar.in/blogs) covers:
 - Featured by MySQL, Cassandra, JavaScript Weekly  
 - Frontpage on Hacker News & Reddit
 
-## Professionally
+### Professionally
 
 - Lead backend at **1Weather @ InMobi**, powering weather data for **200M+ users**
 - Built fintech systems that handle **₹1000 Cr+ disbursals**
 - Love clean infra, elegant APIs, and systems that just _don’t break_
 - Blog read by **300K+ engineers** worldwide
 
-## And lastly...
+### And lastly...
 
 I have three cats: **Kafka**, **Docker**, and **Mango**.  
 
