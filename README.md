@@ -4,8 +4,8 @@ I'm Pankaj - a software engineer obsessed with building **weird**, **fun**, and 
 
 When I’m not working on large-scale systems, I’m probably:
 - Debugging distributed systems for fun
-- Writing about databases and architecture on [my blog](https://your-blog-link.com),
-- Or shipping another side project I thought of at 2 AM.
+- Writing about databases and architecture on [my blog](https://pankajtanwar.in/blogs),
+- Or shipping [another side project](https://pankajtanwar.in/side-hustles) I thought of at 2 AM.
 
 ### My Side Projects That Got People Talking
 
